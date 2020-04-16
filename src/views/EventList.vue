@@ -4,6 +4,8 @@
         <h1>Events Listing</h1>
 
         <EventCard></EventCard>
+
+        <BaseIcon></BaseIcon>
     </div>
 </template>
 

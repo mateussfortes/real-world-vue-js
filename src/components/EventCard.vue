@@ -2,6 +2,7 @@
     <div>
         <router-link :to="{ name: 'event-show', params: { id: '1' } }">
             <h4>{{ event.title }}</h4>
+            <BaseIcon name="users" />
             <p>{{ event.date }}</p>
         </router-link>
     </div>
