@@ -1,23 +1,17 @@
 <template>
     <div>
-        <router-link :to="{ name: 'event-show', params: { id: '1' } }">
+        <router-link :to="{ name: 'event-show', params: { id: event.id } }">
             <h4>{{ event.title }}</h4>
             <BaseIcon name="users" />
-            <p>{{ event.date }}</p>
+            <p>{{ event.created_at }}</p>
         </router-link>
     </div>
 </template>
 
 <script>
     export default {
-        data() {
-            return {
-                event: {
-                    id: 1,
-                    title: 'Park Cleanup',
-                    date: '28/11/1991'
-                }
-            }
+        props: {
+            event: Object
         }
     }
 </script>
